@@ -1,8 +1,8 @@
 import app from './server.js'
 import mongodb from 'mongodb'
 import dotenv from 'dotenv'
-import RestaurantsDAO from './api/dao/restaurantsDAO.js'
-
+import RestaurantsDAO from './dao/restaurantsDAO.js';
+dotenv.config()
 const MongoClient = mongodb.MongoClient
 
 const port = process.env.PORT || 8000
